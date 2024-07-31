@@ -1,0 +1,62 @@
+body {
+    background-color: olive;
+}
+
+div {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 35%;
+
+    /* width: 300px; */
+    width: 60px;
+    height: 190px;
+
+    overflow: hidden;
+
+    background-color: olivedrab;
+
+    cursor: pointer;
+
+    transition: all 250ms ease-in-out;
+}
+
+div:hover {
+    width: 150px;
+}
+
+div:hover h2 {
+    opacity: 0;
+}
+
+div:hover ul {
+    margin-left: 0;
+}
+
+h2 {
+    position: absolute;
+
+    right: 0;
+    top: 30%;
+
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+
+    color: darkolivegreen;
+
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin-top: 50px;
+    margin-left: 50px;
+
+    color: darkslategrey;
+}
+
+li {
+    cursor: pointer;
+}
