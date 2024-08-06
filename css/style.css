@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: olive;
 }
 
@@ -11,7 +11,7 @@ body {
     top: 35%;
 
     width: 200px;
-    /* width: 60px; */
+    width: 60px;
     height: 190px;
 
     overflow: hidden;
@@ -26,21 +26,21 @@ body {
 }
 
 div:hover {
-    /* width: 150px; */
+    width: 150px;
     transform: translateX(0%);
 }
 
 div:hover h2 {
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 h2 {
     position: absolute;
 
     right: 0;
-    /* top: 30%; */
+    top: 30%;
 
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
     transform: rotate(90deg);
 
     color: darkolivegreen;
@@ -54,12 +54,65 @@ ul {
     left: 0;
     top: 15%;
 
-    /* margin-top: 50px;
-    margin-left: 50px; */
+    margin-top: 50px;
+    margin-left: 50px;
 
     color: darkslategrey;
 }
 
 li {
     cursor: pointer;
+} */
+
+body {
+  background-color: olive;
+}
+
+.box {
+  position: absolute;
+  top: 35%;
+
+  width: 200px;
+  height: 190px;
+
+  background-color: olivedrab;
+
+  cursor: pointer;
+
+  transition: all 250ms ease-in-out;
+
+  transform: translateX(-80%);
+}
+
+.box:hover {
+  transform: translateX(0%);
+}
+
+.box:hover h2 {
+  opacity: 0;
+}
+
+h2 {
+  position: absolute;
+  right: -40px;
+  top: 80px;
+
+  transform: rotate(-90deg);
+
+  color: darkolivegreen;
+
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  position: absolute;
+  left: 0;
+  top: 15%;
+
+  color: darkslategrey;
+}
+
+li {
+  cursor: pointer;
 }
